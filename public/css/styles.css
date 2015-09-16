@@ -1,6 +1,17 @@
+/*
+
+
 @import url("common.css");
 @import url("print.css") print;
-/*
+
 	<link rel='stylesheet' type='text/css' media='print' href='css/print.css'/>
 
+
 */
+
+body{
+	margin: 0 auto;
+	max-width: 960px;
+	background-color: gray;
+	background-image: url("../images/bg-body.jpg");
+}
