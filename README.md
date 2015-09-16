@@ -19,6 +19,10 @@ git remote add origin https://github.com/Rekeyea/Arkano-Frontend-JR.git .
 
 4 - git checkout ecb5416 - Se agregan algunos estilos .
 
+5 - git checkout 42e08fa - Herencia .
+
+6 - git checkout 864e58d - Selectores .
+
 
 
 
