@@ -9,10 +9,88 @@
 
 */
 
-body{
-	margin: 0 auto;
-	max-width: 960px;
-	background-color: gray;
-	background-image: url("../images/bg-body.jpg");
-	color: blue; /* NUEVO */
+body {
+    background-color: gray;
+    background-image: url("../images/bg-body.jpg");
 }
+
+/*AGRUPACION*/
+h1, h2, h3, h4 {
+    font-weight: bold;
+}
+
+/*POR ID*/
+#main {
+    background-color: white;
+}
+
+/*POR CLASE*/
+.button {
+    background-color: hotpink;
+    color: white;
+}
+
+/*DESCENDENCIA*/
+blockquote p {
+    font-style: italic;
+}
+
+/*ELEMENTO GENERADO ANTES DE UN p DENTRO DE UN blockquote*/
+blockquote p:before {
+    content: "\201C";
+}
+
+/*ELEMENTO GENERADO DESPUES DE UN p DENTRO DE UN blockquote*/
+blockquote p:after {
+    content: "\201D";
+}
+
+/*HIJO DIRECTO*/
+aside > h3 {
+    font-weight: bold;
+}
+
+/*HERMANO DIRECTO*/
+p + .offer {
+    color: red;
+}
+
+/*SELECTOR POR PROPIEDAD*/
+input[type="text"], input[type="email"] {
+    border: none;
+}
+
+/*SELECTOR POR PROPIEDAD*/
+input[type="submit"][class="button"] {
+    font-size: 1em;
+}
+
+/*PSEUDO CLASE DINAMICA*/
+a:link {
+    text-decoration: underline;
+}
+
+/*PSEUDO CLASE DINAMICA*/
+a:hover {
+    text-decoration: none;
+}
+
+a:visited {
+    color: black;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus {
+    outline-color: black;
+    outline-style: dotted;
+    outline-width: 1px;
+}
+
+#content p:first-of-type:first-letter {
+    font-size: 4em;
+    font-weight: bold;
+}
+
