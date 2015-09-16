@@ -14,4 +14,5 @@ body{
 	max-width: 960px;
 	background-color: gray;
 	background-image: url("../images/bg-body.jpg");
+	color: blue; /* NUEVO */
 }

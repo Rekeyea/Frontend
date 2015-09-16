@@ -17,6 +17,8 @@ git remote add origin https://github.com/Rekeyea/Arkano-Frontend-JR.git .
  
 3 - git checkout 24dafae - CSS Reset .
 
+4 - git checkout ecb5416 - Se agregan algunos estilos .
+
 
 
 
