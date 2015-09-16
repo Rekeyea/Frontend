@@ -1,0 +1,25 @@
+header, nav, footer,section, article,aside{
+	border: 1px inset black;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+}
+
+header, nav, footer{
+	width: 100%;
+	height: 100px;
+}
+
+section, article{
+	height: 200px;
+	width: 80%;
+	margin-right: 0px!important;
+}
+
+aside{
+	height: 400px;
+	width: 20%;
+	float: right;
+}
+
+
+

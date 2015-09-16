@@ -9,7 +9,9 @@ cd app.
 git remote add origin https://github.com/Rekeyea/Arkano-Frontend-JR.git .
 
 
-### Siguiendo el Workshop
+## Siguiendo el Workshop
+
+### CSS
 
 1 - git checkout eb3a412 .
 
@@ -23,7 +25,9 @@ git remote add origin https://github.com/Rekeyea/Arkano-Frontend-JR.git .
 
 6 - git checkout 864e58d - Selectores .
 
+7 - git checkout b17b2c1 - Estilos Completos .
 
 
+### HTML5
 
 
