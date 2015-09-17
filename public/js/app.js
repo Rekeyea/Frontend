@@ -59,3 +59,53 @@ function WriteTrimmed(text){
 	console.log(text.trim());	
 };
 
+/*
+	
+	Parte 3 - Orientacion a Objetos
+
+ */
+
+
+// HERENCIA 1
+
+function Mamifero(nom){
+	this.nombre = nom;
+}
+
+Mamifero.prototype.get_name = function(){
+	return this.nombre;	
+};
+
+Mamifero.prototype.says = function(){
+	return this.dice || "";	
+};
+
+function Gato(nom){
+	this.name = nom;
+	this.dice = "meeow";
+}
+
+Gato.prototype = new Mamifero();
+
+//sobreescribir los metodos de mamifero en gato
+
+//******************************************************
+
+
+// HERENCIA 2
+
+var mamifero = {
+	nombre:"",
+	get_name:function(){
+		return this.nombre;
+	},
+	dice : function(){
+		return this.dice || "";
+	}
+};
+
+var unGato = Object.create(mamifero);
+//sobreescribir los metodos de mamifero por los correspondientes de unGato
+
+//*******************************************************
+
