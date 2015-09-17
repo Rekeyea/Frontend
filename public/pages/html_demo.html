@@ -89,13 +89,37 @@
 					</section>
 				</section>
 				<aside class="col-xs-2">
-					
+					<div class="row">
+						<svg height="150" width="100%">
+							<ellipse cx="240" cy="100" rx="220" ry="30" style="fill:purple" />
+							<ellipse cx="220" cy="70" rx="190" ry="20" style="fill:lime" />
+							<ellipse cx="210" cy="45" rx="170" ry="15" style="fill:yellow" />
+						</svg>
+					</div>
+					<div class="row">
+						<canvas id="canvas"></canvas>
+					</div>
 				</aside>				
 			</article>
 			<footer class="row">
 				Este es el Footer
 			</footer>
 		</main>
+		<script type="text/javascript">
+			var canvas = document.getElementById('canvas');
+			var ctx = canvas.getContext('2d');
+			ctx.font = "bold 36px sans-serif";
+			ctx.shadowColor = "rgb(190, 190, 190)";
+			ctx.shadowOffsetX = 10;
+			ctx.shadowOffsetY = 10;
+			ctx.shadowBlur = 10;
+			var gradient = ctx.createLinearGradient(0, 0, 150, 100);
+			gradient.addColorStop(0, "rgb(128,128,128)");
+			gradient.addColorStop(1, "rgb(0,0, 0)");
+			ctx.fillStyle = gradient;
+			ctx.rotate(-20*Math.PI/180);
+			ctx.fillText("FrontEnd", 10, 100);
+		</script>
 	</body>	
 </html>
 
