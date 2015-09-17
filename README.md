@@ -55,3 +55,19 @@ git remote add origin https://github.com/Rekeyea/Arkano-Frontend-JR.git .
 16 - git checkout 3bcd898 - APIs HTML5 .
 
 17 - git checkout febbfa9 - Problemas con Fechas .
+
+
+### Links Utiles
+
+
+http://stackoverflow.com/questions/7199364/import-vs-link .
+http://www.w3.org/TR/CSS21/media.html .
+http://keithclark.co.uk/articles/moving-ie-specific-css-into-media-blocks/ .
+https://css-tricks.com/specifics-on-css-specificity/ .
+http://webdesign.about.com/od/css/a/css-vendor-prefixes.htm .
+http://microformats.org/wiki/existing-rel-values .
+http://stackoverflow.com/questions/17272019/why-to-use-html5-semantic-tag-instead-of-div .
+https://en.wikipedia.org/wiki/Semantic_Web .
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript .
+http://javascriptissexy.com/oop-in-javascript-what-you-need-to-know/ .
+https://en.wikipedia.org/wiki/Cross-site_scripting .
