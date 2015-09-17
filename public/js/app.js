@@ -109,3 +109,44 @@ var unGato = Object.create(mamifero);
 
 //*******************************************************
 
+
+
+/*
+	
+	Parte 4 - Programacion Funcional
+
+ */
+
+var numeros = [1,2,3,4,5,6];
+
+var suma = numeros.reduce(function(prev,curr,index,arr){
+	return prev + curr;
+},0);
+
+function plus(a,b){
+	return a+b;	
+}
+
+function minus(a,b){
+	return a-b
+}
+
+function mult(a,b){
+	return a*b;
+}
+
+function div(a,b){
+	return a / b;
+}
+
+var miArrayDeFunciones = [plus,minus,mult,div];
+var miObjetoDeFunciones = {"add":add,"minus":minus,"mult":mult,"div":div};
+
+function LlamarPorIndice(ind){
+	miArrayDeFunciones[ind]();
+}
+
+function LlamarPorNombre(nom){
+	miObjetoDeFunciones[nom]();
+}
+
