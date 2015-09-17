@@ -164,13 +164,8 @@ function LlamarPorNombre(nom){
  */
 
 
-function CreateWorkers(){
-	var worker = new Worker("task.js");
-	worker.addEventListener("message",function(e){
-		console.log("El Worker dice: ",e.data);
+function GetGeolocation(){
+	navigator.geolocation.getCurrentPosition(function(position){
+		alert("Nos encontramos en Latitud: "+position.coords.latitude+", Longitud: "+position.coords.longitude);
 	});
-	worker.postMessage("start");
-	setTimeout(function() {
-		worker.postMessage("finish");
-	}, 10000);
 }
