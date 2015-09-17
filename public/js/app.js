@@ -169,3 +169,29 @@ function GetGeolocation(){
 		alert("Nos encontramos en Latitud: "+position.coords.latitude+", Longitud: "+position.coords.longitude);
 	});
 }
+
+
+/*
+	
+	Parte 6 - Problemas con Fechas
+
+ */
+
+var d = new Date("2015-09-17");
+function ImprimirEnFormatoLocal(){
+	console.log(d.toLocaleDateString());
+}
+
+
+function VerMoment(){
+	var a = moment("2015-09-17");
+	console.log(a.format("L"));
+	console.log(a.format("LL"));
+	console.log(a.format("LLL"));
+	
+	var b = moment("18/09/2015","DD/MM/YYYY");
+	console.log(b.format("L"));
+	console.log(b.format("LL"));
+	console.log(b.format("LLL"));
+}
+
