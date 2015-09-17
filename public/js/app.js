@@ -51,6 +51,12 @@ var upByNumber = function(num){
 var upFive = upByNumber(5);
 var upTwo = upByNumber(2);
 
+
+Function.prototype.method = function (name, func) {
+ this.prototype[name] = func;
+ return this;
+};
+
 String.method('trim', function ( ) {
 	return this.replace(/^\s+|\s+$/g, '');
 });
@@ -140,7 +146,7 @@ function div(a,b){
 }
 
 var miArrayDeFunciones = [plus,minus,mult,div];
-var miObjetoDeFunciones = {"add":add,"minus":minus,"mult":mult,"div":div};
+var miObjetoDeFunciones = {"add":plus,"minus":minus,"mult":mult,"div":div};
 
 function LlamarPorIndice(ind){
 	miArrayDeFunciones[ind]();

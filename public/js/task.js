@@ -1,18 +1,20 @@
+var that = self;
 var estadoIniciado = false;
-self.addEventListener("message",function(e){
+that.addEventListener("message",function(e){
 	var msg = e.data;
 	if(msg=="start" && !estadoIniciado){
 		estadoIniciado = true;
 		trabajar();		
-	}else if(msg=="stop"){
+	}else if(msg=="finish"){
 		estadoIniciado=false;
+		that.close();
 	}
 });
 
 function trabajar(){
 	while(estadoIniciado){
 		setTimeout(function() {
-			console.log("Imprimo desde el worker");	
+			that.postMessage("Trabajando...");
 		}, 500);
 	}	
 }
