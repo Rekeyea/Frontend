@@ -2,27 +2,97 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="../css/demo.css" />	
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">			
+		<link rel="stylesheet" href="../css/demo.css">
 	</head>
 	<body>
-		<main>
-			<header>
+		<main class="container">
+			<header class="row">
 				Este es el Header
 			</header>
-			<nav>
+			<nav class="row">
 				<a href="#">Link de Navegacion 1</a>
 				<a href="#">Link de Navegacion 2</a>
 			</nav>
-			<aside>
-				Este es una Barra Lateral
-			</aside>
-			<section>
-				Esta es la Sección
-			</section>
-			<article>
-				Este es el Artículo
+			<article class="row">
+				<section class="col-xs-10">
+					<section class="row">
+						<div class="col-xs-4">
+							Ejemplo de Select
+							<br>
+							<select name="e1" id="e1">
+								<option value="1">Opcion 1</option>
+								<option value="2">Opcion 2</option>
+							</select>
+						</div>
+						<div class="col-xs-4">
+							Ejemplo de Textarea
+							<br>
+							<textarea name="e2" id="e2" cols="30" rows="10">
+								
+							</textarea>
+						</div>
+						<div class="col-xs-4">
+							Ejemplo de Boton
+							<br>
+							<button type="button" onclick="alert('It\'s Me! Mario!')">Quien Eres?</button>
+						</div>
+					</section>
+					<section class="row">
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="i1">Input Number</label>
+								<input type="number" id="i1" name="i1" max="10" min="1">
+							</div>	
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="i2">Input Date</label>
+								<input type="date" id="i2" name="i2">
+							</div>	
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="i3">Input Color</label>
+								<input type="color" id="i3" name="i3">
+							</div>	
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="i4">Input Email</label>
+								<input type="email" required id="i4" name="i4">
+							</div>	
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="i5">Input Search</label>
+								<input type="search" id="i5" name="i5">
+							</div>	
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="i6">Input Url</label>
+								<input type="url" id="i6" name="i6">
+							</div>	
+						</div>
+						<div class="col-xs-4">
+							<div class="form-group">
+								<label for="i7">Input Con DataList</label>
+								<input type="text" id="i7" name="i7" list="urls">
+								<datalist id="urls">
+									<option value="www.linkedin.com"/>
+									<option value="www.facebook.com"/>
+									<option value="www.twitter.com"/>
+								</datalist>
+							</div>	
+						</div>
+					</section>
+				</section>
+				<aside class="col-xs-2">
+					
+				</aside>				
 			</article>
-			<footer>
+			<footer class="row">
 				Este es el Footer
 			</footer>
 		</main>
