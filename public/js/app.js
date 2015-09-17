@@ -150,3 +150,21 @@ function LlamarPorNombre(nom){
 	miObjetoDeFunciones[nom]();
 }
 
+
+/*
+	
+	Parte 5 - HTML5 APIs
+
+ */
+
+
+function CreateWorkers(){
+	var worker = new Worker("task.js");
+	worker.addEventListener("message",function(e){
+		console.log("El Worker dice: ",e.data);
+	});
+	worker.postMessage("start");
+	setTimeout(function() {
+		worker.postMessage("finish");
+	}, 10000);
+}
